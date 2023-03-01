@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:rgb(186, 42, 109);
+}
+body{
+    background:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    padding: 0.8rem;
+    width:180px;
+    margin:auto;
+    color: #ffff;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+form {
+    max-width: 500px;
+    margin:25px 0;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:23px auto;
+    width:600px;
+    border-radius: 23px;
+
+/* background color */
+background-color: var(--primary-color);
+background: radial-gradient(circle, hsla(332, 53%, 82%, 1) 13%, hsla(331, 47%, 82%, 1) 40%, hsla(176, 57%, 89%, 1) 94%);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  input[type="tel"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-transform:capitalize;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color:var(--primary-color);
+  }
+  
+  
+  button{
+    background-color:var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button[type="reset"] {
+  margin-left:10rem;
+  }
+
+  button :hover {
+    background-color:blueviolet;
+  }
+  
+  /* Responsive Mode */
+  @media only screen and (max-width: 768px) {
+    body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    }
+    
+    h1 {
+    font-size: 28px;
+    width: auto;
+    padding: 0.5rem;
+    }
+    
+    .container {
+    width: 100%;
+    margin: 23px auto;
+    border-radius: 0;
+    }
+    
+    form {
+    max-width: 100%;
+    padding: 0 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    textarea {
+    font-size: 18px;
+    margin-bottom: 15px;
+    }
+    
+    button[type="submit"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    }
+
+    button[type="reset"] {
+        margin-left: 5rem;
+      }
+    
+ }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        width: auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    textarea {
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+}
