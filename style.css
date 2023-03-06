@@ -145,7 +145,7 @@ textarea:focus {
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(168, 100, 231, 1) 61%, rgba(253, 45, 252, 1) 100%);
 }
 
-.book {
+.book-now {
   text-align: center;
   font-size: 2rem;
   color: #100f0f;
