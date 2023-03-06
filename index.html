@@ -20,9 +20,11 @@
     <img src="img/moon.png" alt="moon-icon" id="icon">
   </nav>
 
-  <h1>Book Now </h1>
-  <div class="container">
-    <form action="https://formspree.io/f/xqkobqwv" method="POST">
+  <h1 id="hcontact">Contact Us</h1>
+
+  <div id="container">
+    <form id="contact-form" method="POST">
+      <h2 class="book-now">Book Now</h2>
 
       <label for="name"> Your Name:</label>
       <input type="text" id="name" placeholder="enter your name" name="name" autocomplete="off" required>
@@ -48,6 +50,13 @@
       <button type="reset">Reset</button>
     </form>
   </div>
+
+  <div id="popup-message">
+    <h2>Thank you!! We will contact you shortly.
+      <a id="pop-link" href="javascript:location.href=location.href;">Go back</a>
+    </h2>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
